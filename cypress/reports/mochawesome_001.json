@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-13T10:01:47.803Z",
+    "end": "2024-05-13T10:03:18.484Z",
+    "duration": 90681,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7ee5a484-5515-4d3c-ac55-586783e11d0c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\ContactUsFormPage.cy.js",
+      "file": "cypress\\e2e\\ContactUsFormPage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1336cb79-781c-4f32-b6c9-d9608fb3e4c4",
+          "title": "Automate Contact Us Form Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Filling the Contact Us Form with Invalid Data",
+              "fullTitle": "Automate Contact Us Form Page Filling the Contact Us Form with Invalid Data",
+              "timedOut": null,
+              "duration": 30611,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Getting Contact element and Click it\ncy.get('#DrpDwnMn06label').click();\n//Import data from the Fixture Folder   \ncy.fixture('ContactUsFormData.json').then(Data => {\n  // Use the data from 'ValidData' to fill the form\n  const vdata = Data.InValidData[0];\n  //Getting the \"Name\" field by \"ID\" selector\n  cy.get('#input_comp-kf5uosmd').type(vdata.Name).wait(2000);\n  //Getting the \"Email\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosmq').type(vdata.Email).wait(2000);\n  //Getting the \"Phone\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosmw').type(vdata.Phone).wait(2000);\n  //Getting the \"Company Name\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosn2').type(vdata.CompanyName).wait(2000);\n  //Getting the \"Message\" field by \"ID\" selector  \n  cy.get('#textarea_comp-kf5uosn7').type(vdata.Message).wait(2000);\n  //Getting and Clicking on \"Send\" button  \n  cy.get('.l7_2fn').click().wait(3000);\n});",
+              "err": {},
+              "uuid": "d7741d50-3b2c-421b-b2be-47b49b455d0e",
+              "parentUUID": "1336cb79-781c-4f32-b6c9-d9608fb3e4c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Filling the Contact Us Form with Empty Data Fields",
+              "fullTitle": "Automate Contact Us Form Page Filling the Contact Us Form with Empty Data Fields",
+              "timedOut": null,
+              "duration": 16590,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Getting Contact button element and Click it\ncy.get('#DrpDwnMn06label').click();\n//Import data from the Fixture Folder   \ncy.fixture('ContactUsFormData.json').then(Data => {\n  // Use the data from 'ValidData' to fill the form\n  const vdata = Data.EmptyData[0];\n  //Getting the \"Name\" field by \"ID\" selector\n  cy.get('#input_comp-kf5uosmd').type(vdata.Name).wait(1000);\n  //Getting the \"Email\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosmq').type(vdata.Email).wait(1000);\n  //Getting the \"Phone\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosmw').type(vdata.Phone).wait(1000);\n  //Getting the \"Company Name\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosn2').type(vdata.CompanyName).wait(1000);\n  //Getting the \"Message\" field by \"ID\" selector  \n  cy.get('#textarea_comp-kf5uosn7').type(vdata.Message).wait(1000);\n  //Getting and Clicking on \"Send\" button  \n  cy.get('.l7_2fn').click().wait(3000);\n});",
+              "err": {},
+              "uuid": "84c4c48d-b88a-4679-b4fd-cede430204e9",
+              "parentUUID": "1336cb79-781c-4f32-b6c9-d9608fb3e4c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Filling the Contact Us Form with left some required fields",
+              "fullTitle": "Automate Contact Us Form Page Filling the Contact Us Form with left some required fields",
+              "timedOut": null,
+              "duration": 17048,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Getting Contact button element and Click it\ncy.get('#DrpDwnMn06label').click();\n//Import data from the Fixture Folder   \ncy.fixture('ContactUsFormData.json').then(Data => {\n  // Use the data from 'ValidData' to fill the form\n  const vdata = Data.EmptySomeData[0];\n  //Getting the \"Name\" field by \"ID\" selector\n  cy.get('#input_comp-kf5uosmd').type(vdata.Name).wait(1000);\n  //Getting the \"Email\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosmq').type(vdata.Email).wait(1000);\n  //Getting the \"Phone\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosmw').type(vdata.Phone).wait(1000);\n  //Getting the \"Company Name\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosn2').type(vdata.CompanyName).wait(1000);\n  //Getting the \"Message\" field by \"ID\" selector  \n  cy.get('#textarea_comp-kf5uosn7').type(vdata.Message).wait(1000);\n  //Getting and Clicking on \"Send\" button  \n  cy.get('.l7_2fn').click().wait(3000);\n});",
+              "err": {},
+              "uuid": "ffa83b87-b3e2-4140-bc85-68df570d47ed",
+              "parentUUID": "1336cb79-781c-4f32-b6c9-d9608fb3e4c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Filling the Contact Us Form with Invalid Data",
+              "fullTitle": "Automate Contact Us Form Page Filling the Contact Us Form with Invalid Data",
+              "timedOut": null,
+              "duration": 20399,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Getting Contact button element and Click it\ncy.get('#DrpDwnMn06label').click();\n//Import data from the Fixture Folder   \ncy.fixture('ContactUsFormData.json').then(Data => {\n  // Use the data from 'ValidData' to fill the form\n  const vdata = Data.ValidData[0];\n  //Getting the \"Name\" field by \"ID\" selector\n  cy.get('#input_comp-kf5uosmd').type(vdata.Name).wait(1000);\n  //Getting the \"Email\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosmq').type(vdata.Email).wait(1000);\n  //Getting the \"Phone\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosmw').type(vdata.Phone).wait(1000);\n  //Getting the \"Company Name\" field by \"ID\" selector  \n  cy.get('#input_comp-kf5uosn2').type(vdata.CompanyName).wait(1000);\n  //Getting the \"Message\" field by \"ID\" selector  \n  cy.get('#textarea_comp-kf5uosn7').type(vdata.Message).wait(1000);\n  //Getting and Clicking on \"Send\" button  \n  cy.get('.l7_2fn').click().wait(3000);\n});",
+              "err": {},
+              "uuid": "482d92e1-df81-42be-a9b8-a6b9da1104ca",
+              "parentUUID": "1336cb79-781c-4f32-b6c9-d9608fb3e4c4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d7741d50-3b2c-421b-b2be-47b49b455d0e",
+            "84c4c48d-b88a-4679-b4fd-cede430204e9",
+            "ffa83b87-b3e2-4140-bc85-68df570d47ed",
+            "482d92e1-df81-42be-a9b8-a6b9da1104ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 84648,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "pdf": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

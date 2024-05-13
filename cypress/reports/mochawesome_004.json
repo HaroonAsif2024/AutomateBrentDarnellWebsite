@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-13T10:05:43.356Z",
+    "end": "2024-05-13T10:06:13.947Z",
+    "duration": 30591,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3abdc9bc-ea62-4f05-b48a-474089ec62a1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\AboutBDI_Module.cy.js",
+      "file": "cypress\\e2e\\AboutBDI_Module.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f1fb2e4c-696c-4451-bc37-1795577625d2",
+          "title": "About BDI",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visiting About BDI Module",
+              "fullTitle": "About BDI Visiting About BDI Module",
+              "timedOut": null,
+              "duration": 25553,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Getting About BDI button by ID selector and click on it\ncy.get('#DrpDwnMn00label').should('be.visible') // Visible in the screen \n.scrollIntoView() //Focus on element \n.wait(2000) //Wait for 2 sec   \n.click(); //Click on the button\ncy.contains('Our Mission') //Verify text present in the Page\n.should('be.visible') // Visible in the screen \n.wait(2000); //Wait for 2 sec \ncy.contains('Your Top of Mind Problems') //Verify text present in the Page\n.should('be.visible') // Visible in the screen \n.wait(2000); //Wait for 2 sec \ncy.contains('Our Solutions') //Verify text present in the Page\n.should('be.visible') // Visible in the screen \n.wait(2000); //Wait for 2 sec",
+              "err": {},
+              "uuid": "c42826ef-c21c-4cad-a9ec-7c3855287e0d",
+              "parentUUID": "f1fb2e4c-696c-4451-bc37-1795577625d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c42826ef-c21c-4cad-a9ec-7c3855287e0d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25553,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "pdf": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

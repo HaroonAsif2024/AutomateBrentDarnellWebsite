@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "cypress": "^13.9.0"
+  },
+  "name": "brentdarnell",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "devDependencies": {
+    "cypress-html-reporter": "^11.0.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "scripts": {
+    "cy": "npx cypress run --browser chrome --headed --spec \"cypress\\e2e\\ContactUsFormPage.cy.js,cypress\\e2e\\AboutBDI_Module.cy.js,cypress\\e2e\\LEAN_PlanningModule.cy.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

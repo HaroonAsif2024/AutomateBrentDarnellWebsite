@@ -1,0 +1,39 @@
+{
+  "InValidData":[{
+      
+  "Name": "John Wick",
+  "Email": "john.com",
+  "Phone": "*******",
+  "CompanyName":"XYZ",
+  "Message": "What type of courses you are offering"
+}],
+
+"EmptyData":[{
+      
+  "Name": " ",
+  "Email": " ",
+  "Phone": " ",
+  "CompanyName":" ",
+  "Message": " "
+}],
+
+"EmptySomeData":[{
+      
+  "Name": "John Wick",
+  "Email": " ",
+  "Phone":"0123456789",
+  "CompanyName":"XYZ",
+  "Message": " "
+}],
+"ValidData":[{
+      
+  "Name": "John Wick",
+  "Email": "john@yopmail.com",
+  "Phone": "0123456789",
+  "CompanyName":"XYZ",
+  "Message": "What type of courses you are offering"
+}]
+
+
+}
+

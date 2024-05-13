@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-13T11:25:46.421Z",
+    "end": "2024-05-13T11:26:08.933Z",
+    "duration": 22512,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c11918f8-605e-4fe4-abbe-66fa7a242e86",
+      "title": "",
+      "fullFile": "cypress\\e2e\\LEAN_PlanningModule.cy.js",
+      "file": "cypress\\e2e\\LEAN_PlanningModule.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "62d746c3-2513-443f-bfda-f1719d884d27",
+          "title": "LEAN Pull Planning Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visiting LEAN Pull Planning Module",
+              "fullTitle": "LEAN Pull Planning Page Visiting LEAN Pull Planning Module",
+              "timedOut": null,
+              "duration": 19145,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Getting LEAN Pull Planning button by ID selector and click on it\ncy.get('#DrpDwnMn01label').should('be.visible') // Visible in the screen\n.scrollIntoView() //Focus on element \n.wait(2000) //Wait for 2 sec   \n.click(); //Click on the button\ncy.scrollTo('center'); // Scroll down page to center\n//Getting Download Flyer button by class selector and click on it\ncy.get('.l7_2fn').should('be.visible') // Visible in the screen   \n.scrollIntoView() //Focus on element\n.wait(2000) //Wait for 2 sec\n.click() //Click on the button\n.wait(5000);",
+              "err": {},
+              "uuid": "512a0fd6-1905-4e20-944c-96ca54050b8a",
+              "parentUUID": "62d746c3-2513-443f-bfda-f1719d884d27",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "512a0fd6-1905-4e20-944c-96ca54050b8a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19145,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "pdf": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
