@@ -16,6 +16,8 @@ module.exports = defineConfig({
       config.screenshotOnRunFailure = true;
       require('cypress-mochawesome-reporter/plugin')(on);
     },
+
+    defaultCommandTimeout : 6000
   },
 
   

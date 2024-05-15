@@ -1,3 +1,5 @@
+//Naming Convention used of this file name  is Pascal Case 
+//Pascal Case: Starts with a uppercase letter and capitalizes the first letter of each subsequent
 //------------Import File to visit Website----------
 import './VisitContactUsForm.cy'
 

@@ -1,3 +1,6 @@
+//Naming Convention used of this file name  is Pascal Case 
+//Pascal Case: Starts with a uppercase letter and capitalizes the first letter of each subsequent
+
 //------------Import File to visit Website----------
 import './VisitContactUsForm.cy'
 
@@ -18,6 +21,7 @@ describe('LEAN Pull Planning Page',()=>{
        
         cy.scrollTo('bottom');      // Scroll down page to center
 
+        //-------Testing UI of the Modules----------
         cy.get('#comp-j36feozt > [data-testid="container-bg"]').should('have.css', 'width', '292px');
         
         cy.get('#comp-j36feozt > [data-testid="container-bg"]').should('have.css', 'height', '478px');

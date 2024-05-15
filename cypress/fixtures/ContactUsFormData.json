@@ -1,8 +1,8 @@
 {
-  "InValidData":[{
+  "InvalidData":[{
       
   "Name": "John Wick",
-  "Email": "john.com",
+  "Email": "john.com",  
   "Phone": "*******",
   "CompanyName":"XYZ",
   "Message": "What type of courses you are offering"
